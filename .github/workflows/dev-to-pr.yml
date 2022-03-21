@@ -75,7 +75,7 @@ jobs:
         if: steps.apply.outcome == 'success'
         with:
           debug: true
-          github-token: ${{ secrets.PERSO_GITHUB_TOKEN }}
+          github-token: ${{ secrets.REPO_SCOPED_TOKEN }}
           script: |
             github.pulls.create({
               owner: context.repo.owner,
