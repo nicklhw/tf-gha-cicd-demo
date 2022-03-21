@@ -15,7 +15,7 @@ terraform {
     organization = "nw-tfc-learn"
 
     workspaces {
-      name = "gh-actions-demo"
+      prefix = "tf-gha-cicd-demo-"
     }
   }
 }
